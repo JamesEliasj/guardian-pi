@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security - GuardianPi</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/PiLogo.png" alt="GuardianPi Logo" />
+      </div>
+      <div class="sidebar-section">
+        <a href="about.html" class="icon">ℹ️</a>
+        <div class="separator"></div>
+        <a href="data.html" class="icon">📊</a>
+        <a href="notification.html" class="icon">🔔</a>
+        <a href="security.html" class="icon">🛡️</a>
+        <div class="separator"></div>
+        <a href="profile.html" class="icon">👤</a>
+        <a href="settings.html" class="icon">🎛️</a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="main-inner">
+
+        <!-- Top Navigation -->
+        <header class="topnav">
+          <nav class="nav-sections">
+            <div class="nav-left">
+              <a href="about.html">About Us</a>
+              <a href="data.html">Data</a>
+              <a href="notification.html">Alerts</a>
+            </div>
+
+            <h1>GuardianPi</h1>
+
+            <div class="nav-right">
+              <a href="security.html">Security</a>
+              <a href="profile.html">Account</a>
+              <a href="settings.html">Settings</a>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Page Content -->
+        <section class="security-section">
+          <h2>Security Logs</h2>
+
+          <!-- Security Logs Table -->
+          <div class="security-logs">
+            <h3>Recent User Logs</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Action</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>User1</td>
+                  <td>Password Change</td>
+                  <td>2025-02-26 14:32</td>
+                </tr>
+                <tr>
+                  <td>User2</td>
+                  <td>Login Attempt</td>
+                  <td>2025-02-25 09:15</td>
+                </tr>
+                <tr>
+                  <td>User3</td>
+                  <td>Failed Login</td>
+                  <td>2025-02-24 16:47</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Password Change Section -->
+          <div class="security-settings">
+            <h3>Change Password</h3>
+            <form>
+              <label for="current-password">Current Password</label>
+              <input type="password" id="current-password" name="current-password" required>
+
+              <label for="new-password">New Password</label>
+              <input type="password" id="new-password" name="new-password" required>
+
+              <label for="confirm-password">Confirm New Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+
+              <button type="submit" class="submit-btn">Update Password</button>
+            </form>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

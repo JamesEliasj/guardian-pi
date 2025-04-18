@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account Settings - GuardianPi</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="images/PiLogo.png" alt="GuardianPi Logo" />
+        <div class="sidebar-section">
+          <a href="about.html" class="icon">ℹ️</a>
+          <div class="separator"></div>
+          <a href="data.html" class="icon">📊</a>
+          <a href="notification.html" class="icon">🔔</a>
+          <a href="security.html" class="icon">🛡️</a>
+          <div class="separator"></div>
+          <a href="profile.html" class="icon">👤</a>
+          <a href="settings.html" class="icon">🎛️</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="main-inner">
+        <!-- Top Nav -->
+        <header class="topnav">
+          <nav class="nav-sections">
+            <div class="nav-left">
+              <a href="about.html">About Us</a>
+              <a href="data.html">Data</a>
+              <a href="notification.html">Alerts</a>
+            </div>
+            <h1>GuardianPi</h1>
+            <div class="nav-right">
+              <a href="security.html">Security</a>
+              <a href="profile.html">Account</a>
+              <a href="settings.html">Settings</a>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Account Settings Content -->
+        <section class="account-settings">
+          <h2>Account Settings</h2>
+
+          <div class="avatar-block">
+            <div class="avatar-circle">👤</div>
+            <button class="edit-avatar">Edit</button>
+          </div>
+
+          <form class="account-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="Enter your first name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Enter your last name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+
+            <button type="submit" class="save-btn">Save</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+
+
